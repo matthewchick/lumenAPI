@@ -1,6 +1,13 @@
 <?php
 
 /*
+ * 1. Create 3 models for student, courses and teacher
+ *    Set the relationship among students, courses and teachers
+ *    php artisan make:migration create_students_table --create=students
+ * 2. run php artisan migrate inside Homestead in order to create table inside mysql
+
+ */
+/*
 |--------------------------------------------------------------------------
 | Create The Application
 |--------------------------------------------------------------------------
