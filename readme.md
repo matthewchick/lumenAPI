@@ -12,6 +12,9 @@ Laravel Lumen is a stunningly fast PHP micro-framework for building web applicat
 
 Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
 
+## Laravel homestead Installation
+Installation Guide can be found on the [Lumen Homestead](https://laravel.com/docs/5.4/homestead).
+
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.

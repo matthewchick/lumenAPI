@@ -13,7 +13,7 @@ class CreateTeachersTable extends Migration
      */
     public function up()
     {
-        Schema::create('teachers', function (Blueprint $table) {
+        Schema::create('teachers', function (Blueprint $table) {   //teachers is a table name
             $table->increments('id');
             $table->string('name');
             $table->string('address');

@@ -5,7 +5,8 @@
  *    Set the relationship among students, courses and teachers
  *    php artisan make:migration create_students_table --create=students
  * 2. run php artisan migrate inside Homestead in order to create table inside mysql
-
+   3. Insert seed data by using $faker defined in ModelFactory.php => using php artisan db:seed
+   4. Use chrome postman
  */
 /*
 |--------------------------------------------------------------------------
