@@ -10,7 +10,7 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
+     * https://laravel.com/docs/5.1/seeding#using-model-factories
      * @return void
      */
     public function run()

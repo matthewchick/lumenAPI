@@ -6,6 +6,7 @@
  *    php artisan make:migration create_students_table --create=students
  * 2. run php artisan migrate inside Homestead in order to create table inside mysql
    3. Insert seed data by using $faker defined in ModelFactory.php => using php artisan db:seed
+      https://laravel.com/docs/5.1/seeding#using-model-factories
    4. Use chrome postman
  */
 /*

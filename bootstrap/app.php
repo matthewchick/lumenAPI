@@ -53,6 +53,11 @@ $app->singleton(
 );
 
 /*
+Add lumen Route List
+*/
+$app->register(\Thedevsaddam\LumenRouteList\LumenRouteListServiceProvider::class);
+
+/*
 |--------------------------------------------------------------------------
 | Register Middleware
 |--------------------------------------------------------------------------
