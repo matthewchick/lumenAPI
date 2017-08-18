@@ -8,6 +8,21 @@
    3. Insert seed data by using $faker defined in ModelFactory.php => using php artisan db:seed
       https://laravel.com/docs/5.1/seeding#using-model-factories
    4. Use chrome postman
+   5. Create 5 controllers and set route inside web.php inside routes folder
+   6. composer require thedevsaddam/lumen-route-list => add command => php artisan route:list
+      add the following to app.php
+      $app->register(\Thedevsaddam\LumenRouteList\LumenRouteListServiceProvider::class);
+      inside bootstrap folder
+   7. composer require wn/lumen-generators =>
+      Then add the service provider in the file app/Providers/AppServiceProvider.phplike the following:
+        public function register()
+        {
+            if ($this->app->environment() == 'local') {
+                $this->app->register('Wn\Generators\CommandsServiceProvider');
+            }
+        }
+       https://github.com/webNeat/lumen-generators
+
  */
 /*
 |--------------------------------------------------------------------------
