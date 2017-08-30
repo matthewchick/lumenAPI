@@ -8,17 +8,26 @@
 
 namespace App\Http\Controllers;
 
+use App\Course;
 
 class CourseController extends Controller
 {
     public function index()
     {
-        return __METHOD__;
+        //use eloquent
+        $courses = Course::all();
+        return $this->createSuccessResponse($courses, 200);
+        //return response()->json(['data'=>$courses], 200);
+        // return __METHOD__;
     }
 
-    public function show()
+    public function show($id)
     {
-        return __METHOD__;
+        $course = Course::find($id);
+        if ($course){
+            return $this->createSuccessResponse($course, 200);
+        }
+        return $this->createErrorResponse("The course with id ($id), does not exit", 404);
     }
 
 

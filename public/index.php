@@ -4,12 +4,13 @@
  * 1. Create 3 models for student, courses and teacher
  *    Set the relationship among students, courses and teachers
  *    php artisan make:migration create_students_table --create=students
- * 2. run php artisan migrate inside Homestead in order to create table inside mysql
+ * 2. run the command 'php artisan migrate' inside Homestead in order to create tables inside mysql
    3. Insert seed data by using $faker defined in ModelFactory.php => using php artisan db:seed
       https://laravel.com/docs/5.1/seeding#using-model-factories
    4. Use chrome postman
-   5. Create 5 controllers and set route inside web.php inside routes folder
-   6. composer require thedevsaddam/lumen-route-list => add command => php artisan route:list
+   5. Create 5 controllers and set route inside 'web.php' inside routes folder
+   6. https://learninglaravel.net/how-to-get-route-list-in-lumen-as-like-as-laravel
+      composer require thedevsaddam/lumen-route-list => add command => php artisan route:list
       add the following to app.php
       $app->register(\Thedevsaddam\LumenRouteList\LumenRouteListServiceProvider::class);
       inside bootstrap folder
@@ -22,7 +23,8 @@
             }
         }
        https://github.com/webNeat/lumen-generators
-
+       php artisan route:list
+       https://laravel.com/docs/5.1/eloquent#retrieving-multiple-models
  */
 /*
 |--------------------------------------------------------------------------
