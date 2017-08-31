@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\Student;
+use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
@@ -30,7 +31,24 @@ class StudentController extends Controller
         return $this->createErrorResponse("The student with id ($id), does not exit", 404);
     }
 
-    public function store()
+    // https://laravel.com/docs/5.1/eloquent#basic-inserts
+    public function store(Request $request)
+    {
+        $rules =
+            [
+                'name' => 'required',
+                'phone' => 'required|numeric',
+                'address' => 'required',
+                'career' => 'required|in:engineering,math,physics'
+            ];
+
+        $this->validate($request, $rules);
+        $student = Student::create($request->all());
+        return $this->createSuccessResponse("The student with id ($student->id) has been created" , 200);
+
+    }
+
+    public function update()
     {
         return __METHOD__;
     }

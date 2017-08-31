@@ -25,6 +25,7 @@
        https://github.com/webNeat/lumen-generators
        php artisan route:list
        https://laravel.com/docs/5.1/eloquent#retrieving-multiple-models
+    8. insert a record => use Illuminate\Http\Request;
  */
 /*
 |--------------------------------------------------------------------------
