@@ -48,14 +48,22 @@ class StudentController extends Controller
 
     }
 
-    public function update()
+    public function update($student_id)
     {
         return __METHOD__;
     }
 
-    public function destroy()
+    public function destroy($student_id)
     {
-        return __METHOD__;
+        $student = Student::find($student_id);
+
+        if($student)  {
+               $student->courses()->detach();
+               $student->delete();
+               return $this->createSuccessResponse('The student with id ($student_id) has been removed', 200);
+        }
+        return $this->createErrorResponse("The student with id ($student_id), does not exit", 404);
+        
     }
 
 }

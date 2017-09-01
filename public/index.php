@@ -26,6 +26,12 @@
        php artisan route:list
        https://laravel.com/docs/5.1/eloquent#retrieving-multiple-models
     8. insert a record => use Illuminate\Http\Request;
+    9. edit and delete a record
+       lumen for microservice
+       https://medium.com/@poweredlocal/developing-a-simple-api-gateway-in-php-and-lumen-f84756cce043
+       lumen with mongodb
+       https://medium.com/@rafaelcpalmeida/how-to-use-mongodb-with-your-lumen-api-e13f36fa0aa6
+
  */
 /*
 |--------------------------------------------------------------------------
