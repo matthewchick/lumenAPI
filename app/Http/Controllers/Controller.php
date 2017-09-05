@@ -21,4 +21,5 @@ class Controller extends BaseController
     {
         return $this->createErrorResponse($errors, 422);
     }
+
 }
