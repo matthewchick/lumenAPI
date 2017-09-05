@@ -31,7 +31,7 @@
        https://medium.com/@poweredlocal/developing-a-simple-api-gateway-in-php-and-lumen-f84756cce043
        lumen with mongodb
        https://medium.com/@rafaelcpalmeida/how-to-use-mongodb-with-your-lumen-api-e13f36fa0aa6
-
+   10. how to get record from CourseStudentController
  */
 /*
 |--------------------------------------------------------------------------

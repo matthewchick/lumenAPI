@@ -8,12 +8,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Teacher;
 
 class TeacherCourseController extends Controller
 {
-    public function index()
+	// lumenapi.com/teachers/1/courses
+    public function index($teacher_id)
     {
-        return __METHOD__;
+	    $teacher = Teacher::find($teacher_id);
+	    if ($teacher)
+	    {
+		    $courses = $teacher->courses;
+		    return $this->createSuccessResponse($courses, 200);
+	    }
+	    return $this->createErrorResponse("Does not exists a teacher with the given id", 404);
     }
 
     public function store()
