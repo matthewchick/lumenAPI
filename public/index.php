@@ -34,7 +34,10 @@
    10. how to get record from CourseStudentController
    11. Insert data to course table and courseStudent table
    12. Edit and remove
+   13. https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
+	   https://github.com/lucadegasperi/oauth2-server-laravel
 
+   14. https://github.com/stripe/stripe-php
  */
 /*
 |--------------------------------------------------------------------------
