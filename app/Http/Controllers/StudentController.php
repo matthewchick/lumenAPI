@@ -15,8 +15,9 @@ class StudentController extends Controller
 {
     public function index()
     {
-        //use eloquent
-        $students = Student::all();
+        // use eloquent
+        // $students = Student::all();
+	    $students = Student::orderBy('updated_at', 'desc') -> get();
         return $this->createSuccessResponse($students, 200);
         //return response()->json(['data'=>$courses], 200);
         // return __METHOD__;

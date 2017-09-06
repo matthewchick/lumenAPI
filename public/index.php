@@ -32,6 +32,9 @@
        lumen with mongodb
        https://medium.com/@rafaelcpalmeida/how-to-use-mongodb-with-your-lumen-api-e13f36fa0aa6
    10. how to get record from CourseStudentController
+   11. Insert data to course table and courseStudent table
+   12. Edit and remove
+
  */
 /*
 |--------------------------------------------------------------------------
