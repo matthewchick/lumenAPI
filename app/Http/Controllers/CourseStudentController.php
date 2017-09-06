@@ -41,9 +41,9 @@ class CourseStudentController extends Controller
 				$course->students()->attach($student->id);
 			    return $this->createSuccessResponse("The student with id {$student->id} was added to the course with id {$course->id}", 201);
 		    }
-		    return $this->createErrorResponse("The student with id {$student->id}, does not exist", 404);
+		    return $this->createErrorResponse("The student with id {$student_id}, does not exist", 404);
 	    }
-	    return $this->createErrorResponse("The course with id {$course->id}, does not exist", 404);
+	    return $this->createErrorResponse("The course with id {$course_id}, does not exist", 404);
     }
 
     public function show()
