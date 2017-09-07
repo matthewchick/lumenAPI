@@ -36,8 +36,8 @@
    12. Edit and remove
    13. https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
 	   https://github.com/lucadegasperi/oauth2-server-laravel  is not allowed
-       Use the lumen-passport
-	   "dusterio/lumen-passport": "^0.1.7"
+       Use the lumen-passport =>
+	   "dusterio/lumen-passport": "^0.1.7" => https://github.com/dusterio/lumen-passport
 	   Modify the bootstrap flow (bootstrap/app.php file)
    14. https://github.com/stripe/stripe-php
  */

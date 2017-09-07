@@ -27,7 +27,7 @@ $app = new Laravel\Lumen\Application(
     realpath(__DIR__.'/../')
 );
 
-// $app->withFacades();
+$app->withFacades();
 
 $app->withEloquent();
 
@@ -72,9 +72,10 @@ $app->register(\Thedevsaddam\LumenRouteList\LumenRouteListServiceProvider::class
 //    App\Http\Middleware\ExampleMiddleware::class
 // ]);
 
-// $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+// Enable auth middleware (shipped with Lumen)
+$app->routeMiddleware([
+     'auth' => App\Http\Middleware\Authenticate::class,
+	]);
 
 /*
 |--------------------------------------------------------------------------
@@ -86,6 +87,10 @@ $app->register(\Thedevsaddam\LumenRouteList\LumenRouteListServiceProvider::class
 | totally optional, so you are not required to uncomment this line.
 |
 */
+
+// Finally register two service providers - original one and Lumen adapter
+$app->register(Laravel\Passport\PassportServiceProvider::class);
+$app->register(Dusterio\LumenPassport\PassportServiceProvider::class);
 
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
