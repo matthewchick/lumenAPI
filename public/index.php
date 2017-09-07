@@ -40,6 +40,7 @@
 	   "dusterio/lumen-passport": "^0.1.7" => https://github.com/dusterio/lumen-passport
 	   Modify the bootstrap flow (bootstrap/app.php file)
    14. https://github.com/stripe/stripe-php
+   15. how to handle exception inside Handler.php
  */
 /*
 |--------------------------------------------------------------------------
