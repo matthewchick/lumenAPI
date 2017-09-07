@@ -41,6 +41,9 @@
 	   Modify the bootstrap flow (bootstrap/app.php file)
    14. https://github.com/stripe/stripe-php
    15. how to handle exception inside Handler.php
+   16  how to check lumen performance
+       use ab -t 10 -c 10 http://lumenapi.com/
+	   fine-tune performance using composer dump-autoload -o
  */
 /*
 |--------------------------------------------------------------------------
