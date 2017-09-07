@@ -1,7 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jeremychik
- * Date: 7/9/2017
- * Time: 1:57 PM
- */
+
+return [ 'defaults' => [
+'guard' => 'api',
+        'passwords' => 'users',
+    ],
+
+    'guards' => [
+	'api' => [
+		'driver' => 'passport',
+		'provider' => 'users',
+	],
+],
+
+    'providers' => [
+	'users' => [
+		'driver' => 'eloquent',
+		'model' => \App\User::class
+	]
+]
+];

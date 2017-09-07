@@ -5,6 +5,10 @@ namespace App\Providers;
 use App\User;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Passport\Passport;
+
+// https://devnotes.net/rest-api-development-with-lumen-part-4-oauth2-authentication-seeding/
+// https://github.com/hasib32/rest-api-with-lumen/blob/master/app/Providers/AuthServiceProvider.php
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -35,5 +39,10 @@ class AuthServiceProvider extends ServiceProvider
                 return User::where('api_token', $request->input('api_token'))->first();
             }
         });
+
+	    Passport::tokensCan([
+		    'admin' => 'Admin user scope',
+		    'basic' => 'Basic user scope',
+	    ]);
     }
 }
